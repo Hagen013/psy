@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{% block meta_title %}{% endblock %}</title>
+	<meta name="description" content="{% block meta_description %}{% endblock %}">
+	<meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
+	{% block css %}
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="{{ static('css/styles.css') }}" />
+	{% endblock css %}
+	{% block scripts_head %}
+	{% endblock scripts_head %}
+</head>
+
+
+<body>
+	<div class="page-content-wrapper">
+		{% block header %}
+			{% include "base/header.html" %}
+		{% endblock header %}
+
+		{% block content %}
+		{% endblock content %}
+	</div>
+
+	{% block footer %}
+		{% include "base/footer.html" %}
+	{% endblock footer %}
+
+	{% block modals %}
+	{% endblock modals %}
+
+	{% block scripts %}
+    	<script src="{{ static('js/common.js') }}"></script>
+	{% endblock scripts %}	
+</body>

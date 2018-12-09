@@ -1,0 +1,15 @@
+# Basics
+.git
+*.py[cod]
+__pycache__
+*.env
+
+# Jupyter notebook
+.*ipynb_checkpoints/
+*.ipynb
+
+client/node_modules
+client/dist
+client/package-lock.json
+
+*.sqlite3

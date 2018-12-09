@@ -1,0 +1,22 @@
+@import "../../node_modules/normalize-scss/sass/normalize";
+
+@import 'abstracts/*';
+@import 'base/*';
+@import 'layout/*';
+@import 'pages/*';
+@import 'themes/*';
+@import 'UIKit/*';
+
+// Typography
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.header {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}

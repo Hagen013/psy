@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/*__pycache__": true,
+        ".vscode": true,
+        "client/package-lock.json": true,
+        "client/node_modules": true
+    },    
+}

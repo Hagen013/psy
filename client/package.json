@@ -1,0 +1,45 @@
+{
+  "name": "psy-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development ../server/manage.py runserver | webpack-dev-server --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
+    "cross-env": "^5.0.5",
+    "css-loader": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-fontgen": "^0.2.5",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-sass": "^4.9.0",
+    "normalize-scss": "^7.0.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^3.1.1",
+    "typescript": "^3.0.1",
+    "vue": "^2.5.18",
+    "vue-loader": "^14.2.2",
+    "vue-router": "^3.0.2",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
