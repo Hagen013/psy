@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-	CONTENT
+	<div class="page__content">
+		<div class="hero-wrap container-fluid">
+			<span class="gradient">
+			</span>
+
+		</div>
+		<div class="process-wrap">
+		</div>
+	</div>
 {% endblock content %}
+
+{% block scripts %}
+	{{ super() }}
+	<script src="{{ static('js/main.js') }}"></script>
+{% endblock scripts %}
