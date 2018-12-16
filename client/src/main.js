@@ -19,7 +19,6 @@ $(document).ready(function () {
       //only run parallax if on desktop screen
       //(mobile parallax interferes with content consumption)
       if ( pageWidth > 800 ) {
-        headerAnimate();
         parallax();
       }
     });
@@ -27,7 +26,7 @@ $(document).ready(function () {
     function parallax(){
       var scrolled = $(window).scrollTop();
       $('.has-parallax').css(
-        'top', (scrolled*0.3)+'px'
+        'top', (scrolled*0.4)+'px'
       );
     }
   

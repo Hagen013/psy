@@ -2,16 +2,80 @@
 
 {% block content %}
 	<div class="page__content">
-		<div class="hero-wrap container-fluid">
-			<span class="gradient">
-			</span>
-			<div class="caption">
-				<h1>Школа Психологии</h1>
-				<p>Анастасии Кузнецовой</p>
+
+		<div class="hero">
+			<div class="hero__placeholder">
+			</div>
+			<div class="hero__content-wrap">
+				<span class="gradient has-parallax">
+				</span>
+				<div class="hero__image has-parallax">
+				</div>
+				<div class="content-area">
+					<div class="hero__content">
+						<div class="hero__text">
+							<h1>Школа психологии</h1>
+							<p>Анастасии Кузнецовой</p>
+							<a class="btn full">
+								УЗНАТЬ ПОДРОБНОСТИ
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="hero__overlay" style="background-image: -moz-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60)); background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60)); background-image: -o-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60)); background-image: -ms-linear-gradient(top, rgba(0,0,0,0.60), rgba(0,0,0,0.60));"></div>
 			</div>
 		</div>
-		<div class="process-wrap">
+
+		<div class="about">
+			<div class="content-area">
+				<h2 class="subtitle">Обо мне</h2>
+				<div class="about__content">
+					<div class="about__content-left">
+						<div class="about__img-wrap">
+							<img class="about__img" src="{{ static('images/02.jpg') }}">
+						</div>
+					</div>
+					<div class="about__content-right">
+						<div class="about__text text">
+								<p>Идейные соображения высшего порядка, а также реализация намеченных плановых заданий в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. С другой стороны рамки и место обучения кадров позволяет выполнять важные задания по разработке систем массового участия.</p>
+								<p>Значимость этих проблем настолько очевидна, что консультация с широким активом позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+
+		<div class="services">
+			<div class="content-area">
+				<h2 class="subtitle">Услуги</h2>
+			</div>
+			<div class="services__content-wrap">
+				<div class="services__background">
+					<div class="gradient"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="reviews">
+			<div class="content-area">
+				<div class="reviews__content">
+					<h2 class="subtitle">Отзывы</h2>
+					<div class="reviews__list">
+						{% include 'blocks/reviews.html' %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="contacts">
+			<div class="content-area">
+				<div class="contacts__content">
+					<h2 class="subtitle">Контакты</h2>
+				</div>
+			</div>
+		</div>
+
 	</div>
 {% endblock content %}
 

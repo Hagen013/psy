@@ -1,0 +1,80 @@
+a.btn {
+    font-size: 18px;
+    line-height: 50px;
+    background: #f6a8a8;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    justify-self: center;
+    white-space: nowrap;
+    background: linear-gradient(104.74deg, rgb(246,168,168) 0%, rgb(233,111,162) 100%);
+    border-radius: 5px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px 32px;
+    outline: none;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) 0s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+
+a .full {
+    width: 100%;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+.transition {
+    transition: all 0.3s ease-out;
+}
+
+.content-area {
+    height: 100%;
+    margin: 0 auto;
+    width: 320px;
+    @include mq($from: mobile) {
+      width: 480px;
+    }
+    @include mq($from: tablet, $until: desktop) {
+      width: 750px;
+    }
+    @include mq($from: desktop, $until: wide) {
+      width: 970px;
+    }
+    @include mq($from: wide) {
+      width: 1170px;
+    }
+}
+
+.content-area_flex {
+    display: flex;
+}
+
+.page__content {
+    height: 100%;
+	width: 100%;
+	min-width: 320px;
+}
+
+.page__content-top {
+	margin-bottom: -230px;
+	min-height: 100%;
+	&:after {
+		content: "";
+		display: block;
+		height: 230px;
+	}
+}
+
+.page__footer {
+	height: 230px;
+}
+

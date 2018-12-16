@@ -1,0 +1,32 @@
+.about {
+    padding: 64px 0px;
+}
+
+.about__content {
+    display: flex;
+}
+
+.about__content-left {
+    width: 50%;
+}
+
+.about__content-right {
+    width: 50%;
+}
+
+.about__img-wrap {
+    height: 500px;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.about__text {
+    font-size: 16px;
+    line-height: 1.8;
+    p {
+        margin-bottom: 16px;
+    }
+}
