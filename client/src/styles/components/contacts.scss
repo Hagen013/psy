@@ -1,5 +1,15 @@
 
 .contacts {
     position: relative;
-    padding: 64px 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    p {
+        margin-bottom: 16px;
+    }
 }

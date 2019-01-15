@@ -1,8 +1,3 @@
-import $ from "jquery";
-
-console.log('main');
-
-
 $(document).ready(function () {
 
     var header = $('header');
@@ -45,4 +40,13 @@ $(document).ready(function () {
       resetText($(this), "Learn more");
     });
     
-  });
+    $('#carousel-1').owlCarousel({
+      loop: true,
+      dots: false,
+      items: 1,
+      autoplay: false,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+    })
+
+});

@@ -7,11 +7,21 @@
 }
 
 .about__content-left {
+    position: relative;
     width: 50%;
 }
 
 .about__content-right {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: justify;
     width: 50%;
+    .quote_start {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 .about__img-wrap {
@@ -25,8 +35,24 @@
 
 .about__text {
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.9;
     p {
         margin-bottom: 16px;
+    }
+}
+
+.about__contacts {
+    position: absolute;
+    top: 0px;
+    right: 120px;
+}
+
+.about__link {
+    height: 33px;
+    width: 33px;
+    margin-bottom: 16px;
+    img {
+        height: 100%;
+        width: 100%;
     }
 }
