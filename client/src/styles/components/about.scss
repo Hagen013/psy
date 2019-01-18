@@ -4,32 +4,59 @@
 
 .about__content {
     display: flex;
+    flex-direction: column-reverse;
+    @include mq($from: desktop) {
+        flex-direction: row;
+    }
 }
 
 .about__content-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     position: relative;
-    width: 50%;
+    @include mq($from: desktop) {
+        width: 50%;
+    }
 }
 
 .about__content-right {
     position: relative;
-    padding-top: 30px;
-    padding-left: 30px;
     text-align: justify;
-    width: 50%;
+    padding-top: 30px;
     .quote_start {
         position: absolute;
         top: 0px;
         left: 0px;
     }
+    @include mq($from: desktop) {
+        padding-left: 30px;
+        width: 50%;
+    }
 }
 
 .about__img-wrap {
-    height: 500px;
-    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 100%;
     img {
-        height: 100%;
-        width: auto;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        max-width: 500px;
+    }
+    @include mq($from: desktop) {
+        text-align: left;
+        img {
+            height: 450px;
+            width: auto;
+        }
+    }
+    @include mq($from: wide) {
+        img {
+            height: 500px;
+            width: auto;
+        }
     }
 }
 
@@ -42,9 +69,30 @@
 }
 
 .about__contacts {
-    position: absolute;
-    top: 0px;
-    right: 120px;
+    display: flex;
+    width: 100%;
+    max-width: 624px;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 24px;
+    .social-link {
+        height: 36px;
+        width: 36px;
+    }
+    @include mq($from: desktop) {
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 54px;
+        width: auto;
+        margin-top: 0px;
+        .social-link {
+            margin-bottom: 16px;
+        }
+    }
+    @include mq($from: wide) {
+        right: 100px;
+    }
 }
 
 .about__link {

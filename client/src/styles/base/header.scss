@@ -1,6 +1,5 @@
 .header {
     @extend .transition;
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,7 +13,7 @@
     &.scrolled {
         background: rgba(255, 255, 255, 1);
         box-shadow: 0 0 66px 4px rgba(152, 123, 123, 0.18);
-        .row {
+        .header__desktop {
             @extend .transition;
             padding-top: 20px;
             padding-bottom: 20px;
@@ -23,13 +22,6 @@
             font-size: 38px;
             font-weight: 900;
         }
-    }
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     .logo {
         text-decoration: none !important;
@@ -62,4 +54,29 @@
 
 .header__logo-wrap {
     width: 230px;
+}
+
+.header__desktop {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include mq($from: desktop) {
+        display: flex;
+    }
+}
+
+.header__mobile {
+    display: block;
+    @include mq($from: desktop) {
+        display: none;
+    }
+}
+
+.header__burger {
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }

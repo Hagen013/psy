@@ -1,0 +1,42 @@
+.goals__content-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.goals {
+    position: relative;
+    margin-bottom: 64px;
+    .content-area {
+        height: auto;
+    }
+    .content-area {
+        height: 100%;
+    }
+    .gradient {
+        opacity: 0.9;
+    }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/brain.png);
+    .gradient {
+        opacity: 0.6;
+        z-index: 0;
+    }
+}
+
+.goals__content {
+    padding: 102px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    z-index: 1000;
+    text-align: center;
+    line-height: 1.8;
+}

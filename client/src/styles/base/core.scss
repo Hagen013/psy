@@ -54,6 +54,21 @@ a:active, a:hover {
     }
 }
 
+.content-area_mb {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0px 16px;
+  @include mq($from: desktop, $until: wide) {
+    width: 970px;
+    margin: 0 auto;
+  }
+  @include mq($from: wide) {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 .content-area_flex {
     display: flex;
 }

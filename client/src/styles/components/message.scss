@@ -1,0 +1,16 @@
+.message {
+
+}
+
+.message__content {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 64px;
+    p {
+        text-align: justify;
+        margin-bottom: 16px;
+    }
+    @include mq($from: desktop) {
+        padding: 0px 32px;
+    }
+}
