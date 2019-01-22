@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /api
+Disallow: /u
+
+Sitemap: https://kubomarket.ru/sitemap.xml
+Host: https://kubomarket.ru

@@ -47,7 +47,8 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'django_filters',
     'mptt',
-    'imagekit'
+    'imagekit',
+    'raven.contrib.django.raven_compat'
 ]
 
 LOCAL_APPS = [

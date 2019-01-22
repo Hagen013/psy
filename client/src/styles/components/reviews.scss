@@ -1,9 +1,22 @@
 .reviews {
     padding: 64px 0px;
     margin-bottom: 64px;
+    background: #eeeeee;
+}
+
+.reviews__title {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 .review__photo-wrap {
+    position: absolute;
+    top: 16px;
+    left: 16px;
     height: 80px;
     width: 80px;
     border-radius: 40px;
@@ -21,18 +34,25 @@
 .reviews__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .review {
-    width: 48%;
+    position: relative;
     border-radius: 8px;
     background: white;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    margin-bottom: 24px;
+    width: 100%;
+    @include mq($from: desktop) {
+        width: 48%;
+    }
 }
 
 .review__title {
+    min-height: 107px;
     display: flex;
-    padding: 16px;
+    padding: 24px 24px 24px 96px;
     align-items: center;
     border-bottom: 2px solid #f3f3f3;
 }
@@ -47,8 +67,8 @@
 }
 
 .review__author {
+    height: 100%;
     display: flex;
     align-items: center;
-    height: 100px;
     padding: 0px 16px;
 }

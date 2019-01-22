@@ -2,13 +2,10 @@ $(document).ready(function () {
 
     var header = $('header');
     var pageWidth = $(window).width();
-  
-    $('body').on('click', '.scroller', function(){
-      $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
-      }, 800, 'easeOutQuart');
-    });
-  
+
+    // Add Event Listener to parent Element 
+    document.querySelector('.scroller').addEventListener("click", reply_click);
+    
     //functions to run on scroll
     $(window).scroll(function(){
       //only run parallax if on desktop screen
@@ -42,9 +39,9 @@ $(document).ready(function () {
     
     $('#carousel-1').owlCarousel({
       loop: true,
-      dots: false,
+      dots: true,
       items: 1,
-      autoplay: false,
+      autoplay: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: true,
     })

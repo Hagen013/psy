@@ -1,0 +1,4 @@
+POSTGRES_USER=graph_market_admin
+POSTGRES_DB=graph_market_cube
+POSTGRES_PASSWORD=1234qwer
+PGDATA=/var/postgres_psy/data

@@ -40,7 +40,7 @@
 			</div>
 		</div>
 
-		<div class="about">
+		<div class="about" id="about">
 			<div class="content-area_mb">
 				<div class="about__content-wrap">
 					<h2 class="subtitle">Привет, я Настя.</h2>
@@ -104,17 +104,30 @@
 			</div>
 		</div>
 
-		<div class="goals">
+		<div class="goals" id="goals">
 			<div class="content-area_mb">
 				<div class="goals__content">
 					<h2 class="subtitle">
-						Цель терапии:
+						Цели терапии:
 					</h2>
-					<p>
-					Помочь клиенту вырваться из круга неудач, научиться контролировать 
-					разрушительные импульсы или 
-					преодолевать подавляющее состояние апатии и бессилия.
-					</p>
+					<ul class="goals__list">
+						<li class="goals__list-item">
+						осознавание своих чувств, мыслей, 
+						блокирующих установок, привычных способов взаимодействия с другими людьми;
+						</li>
+						<li class="goals__list-item">
+						выход из череды повторяющихся нежелательных ситуаций;
+						</li>
+						<li class="goals__list-item">
+						принятие ответственности за свою жизнь и свои решения; 
+						</li>
+						<li class="goals__list-item">
+						возвращение врожденной способности к росту;
+						</li>
+						<li class="goals__list-item">
+						обретение гармонии и целостности
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="overlay"></div>
@@ -188,6 +201,19 @@
 		{% block quotes %}
 			{% include "blocks/quotes.html" %}
 		{% endblock quotes %}
+
+		<div class="reviews" id="reviews">
+			<div class="content-area_mb">
+				<div class="reviews__content">
+					<h3 class="reviews__title">
+						Отзывы
+					</h3>
+					<div class="reviews__list">
+						{% include "blocks/reviews.html" %}
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
 {% endblock content %}
@@ -196,5 +222,5 @@
 	{{ super() }}
 	<script src="{{ static('js/jquery-3.2.1.min.js') }}"></script>
 	<script src="{{ static('js/owl.carousel.min.js') }}"></script>
-	<script src="{{ static('js/main.js') }}"></script>
+	<script src="{{ static('js/main_60897d1.js') }}"></script>
 {% endblock scripts %}
