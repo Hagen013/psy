@@ -21,7 +21,7 @@ cp -r ./web/frontend/static_production ./compose/nginx/;
 hash_suffix="$(date | md5sum | cut -c1-7)"
 echo "HASH_SUFFIX=${hash_suffix}"
 
-TEMPLATES_PATH="$(cd ./client/templates && pwd && cd ../..)"
+TEMPLATES_PATH="$(cd ./web/frontend/templates && pwd && cd ../..)"
 echo "TEMPLATES_PATH=${TEMPLATES_PATH}"
 # STATIC FILES
 cd ./compose/nginx/static_production

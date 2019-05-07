@@ -11,5 +11,6 @@ __pycache__
 web/frontend/node_modules
 web/frontend/static_production
 web/frontend/package-lock.json
+compose/nginx/static_production
 
 *.sqlite3
