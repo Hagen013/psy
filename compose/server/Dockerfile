@@ -10,7 +10,7 @@ RUN apk add --no-cache \
     py3-pillow
 
 # INSTALL REQUIREMENTS
-COPY  server/requirements/requirements.txt requirements.txt
+COPY  web/requirements/base.txt requirements.txt
 RUN pip3 install --upgrade pip
 RUN pip3 install --no-cache-dir -r requirements.txt
 
@@ -18,7 +18,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 RUN apk add --update --no-cache bash
 
 # COPY ENTRYPOINT AND CODE
-COPY  server /server
+COPY  web /web
 COPY  compose/server/uwsgi.ini uwsgi.ini
 COPY  compose/server/entrypoint.sh entrypoint.sh
 RUN sed -i 's/\r//' /entrypoint.sh

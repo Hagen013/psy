@@ -1,20 +1,21 @@
 #!/bin/bash
 
 # FRONTEND
-cd ./client/;
-# npm i;
+cd ./web/backend/;
+
+nvm use 8.12.0;
 npm run build;
 gulp build;
 cd ..;
 # BACKEND
 source ../venv/bin/activate;
-cd ./server/
+cd ./backend/
 echo 'yes' | python3 manage.py collectstatic --settings=config.settings.production;
 deactivate;
 cd ..;
 # STATIC_PRODUCTION TO NGINX STATIC
 rm -rf ./compose/nginx/static_production;
-cp -r ./client/static_production ./compose/nginx/;
+cp -r ./web/frontend/static_production ./compose/nginx/;
 # ADD HASH TO STATIC FILE NAMES IN 
 # STATIC FILES AND IN TEMPLATES
 hash_suffix="$(date | md5sum | cut -c1-7)"

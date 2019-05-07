@@ -20,7 +20,7 @@ until postgres_ready; do
 done
 >&2 echo "Postgres is up - continuing..."
 
-python3 /server/manage.py migrate && \
+python3 /web/backend/manage.py migrate && \
         uwsgi --plugin python3 --ini ./uwsgi.ini
 
 exec $cmd
