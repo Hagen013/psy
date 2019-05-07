@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # FRONTEND
-cd ./web/backend/;
+cd ./web/frontend/;
 
 nvm use 8.12.0;
 npm run build;
