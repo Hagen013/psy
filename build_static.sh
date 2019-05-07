@@ -12,7 +12,7 @@ source ../venv/bin/activate;
 cd ./backend/
 echo 'yes' | python3 manage.py collectstatic --settings=config.settings.production;
 deactivate;
-cd ..;
+cd ../..;
 # STATIC_PRODUCTION TO NGINX STATIC
 rm -rf ./compose/nginx/static_production;
 cp -r ./web/frontend/static_production ./compose/nginx/;
