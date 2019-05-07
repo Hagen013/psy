@@ -3,7 +3,7 @@ version: "3"
 services:
   # NGINX
   nginx:
-    image: hagen013/psy_nginx:latest
+    image: hagen013/psy_nginx
     restart: unless-stopped
     hostname: nginx
     build:
@@ -21,7 +21,7 @@ services:
       - web
   # WEB
   web:
-    image: hagen013/psy_server:latest
+    image: hagen013/psy_server
     restart: unless-stopped
     hostname: web
     build:
