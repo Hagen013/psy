@@ -1,2 +1,0 @@
-webpackJsonp([1],[function(o,e){$(document).ready(function(){function o(){var o=$(window).scrollTop();$(".has-parallax").css("top",.6*o+"px")}var e=($("header"),$(window).width());document.querySelector(".scroller").addEventListener("click",reply_click),$(window).scroll(function(){e>800&&o()}),$(".js-soon").on("click",function(o){o.preventDefault(),$(this).text("Coming Soon..."),resetText($(this),"Learn more")}),$("#carousel-1").owlCarousel({loop:!0,dots:!0,items:1,autoplay:!0,autoplayTimeout:3e3,autoplayHoverPause:!0})})}],[0]);
-//# sourceMappingURL=main.js.map

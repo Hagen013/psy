@@ -3,7 +3,7 @@ version: "3"
 services:
   # NGINX
   nginx:
-    image: hagen013/psy_nginx
+    image: hagen013/psy_nginx:latest
     restart: unless-stopped
     hostname: nginx
     build:
@@ -12,7 +12,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "8282:8282"
     volumes:
       - /var/psy:/media
     links:
@@ -21,7 +20,7 @@ services:
       - web
   # WEB
   web:
-    image: hagen013/psy_server
+    image: hagen013/psy_server:latest
     restart: unless-stopped
     hostname: web
     build:

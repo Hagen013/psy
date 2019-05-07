@@ -6,5 +6,3 @@ POSTGRES_DATABASE=graph_market_cube
 POSTGRES_USER=graph_market_admin
 POSTGRES_PASSWORD=1234qwer
 POSTGRES_HOST=postgres
-
-RAVEN_DSN=https://8f089b09126d4865baea59937e507be5:5e2d232cf04147f1b1591a53a7dacab4@sentry.io/288102

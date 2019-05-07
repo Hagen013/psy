@@ -1,0 +1,45 @@
+<div class="sidenav" id="sidenav">
+    <div class="sidenav__overlay"
+        onclick="closeNav()"
+    >
+        <div class="sidenav__close">
+            <div class="sidenav__close-icon icon">
+                ✕
+            </div>
+        </div>
+    </div>
+    <ul class="sidenav__menu">
+        <a class="sidenav__link scroller-mobile" href="#about">
+            Обо мне
+        </a>
+        <a class="sidenav__link scroller-mobile" href="#goals">
+            Цели
+        </a>
+        <a class="sidenav__link scroller-mobile" href="#reviews">
+            Отзывы
+        </a>
+        <a class="sidenav__link scroller-mobile" href="#contacts">
+            Контакты
+        </a>
+        <div class="sidenav__social">
+            <a class="social-link"
+                href="https://www.instagram.com/a.kyznetsova/"
+                target="_blank"
+            >
+                <img src="{{ static('images/icons/instagram.svg') }}">
+            </a>
+            <a class="social-link"
+                href="mailto:a.kuznetsova.psy@mail.ru"
+                target="_blank"
+            >
+                <img src="{{ static('images/icons/mail.svg') }}">
+            </a>
+            <a class="social-link"
+                href="tel:+7 (905) 740-80-30"
+                target="_blank"
+            >
+                <img src="{{ static('images/icons/phone.svg') }}">
+            </a>
+        </div>
+    </ul>
+</div>

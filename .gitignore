@@ -8,8 +8,8 @@ __pycache__
 .*ipynb_checkpoints/
 *.ipynb
 
-client/node_modules
-client/dist
-client/package-lock.json
+web/frontend/node_modules
+web/frontend/static_production
+web/frontend/package-lock.json
 
 *.sqlite3

@@ -1,0 +1,1 @@
+webpackJsonp([1],{7:function(s,n,o){"use strict";console.log("news.js")}},[7]);
