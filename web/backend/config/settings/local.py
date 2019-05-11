@@ -1,5 +1,7 @@
 from .develop import *
 
+STATIC_ROOT = str(ROOT_DIR.path('frontend/static_production'))
+
 # DATABASES CONFIGURATION START
 # ------------------------------------------------------------------------------
 DATABASES = {
