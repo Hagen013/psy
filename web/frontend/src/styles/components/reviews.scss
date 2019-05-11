@@ -59,6 +59,10 @@
     border-bottom: 2px solid #f3f3f3;
 }
 
+.review__title_single {
+    padding: 24px 24px 24px 24px;
+}
+
 .review__text {
     padding: 16px;
     text-align: justify;
@@ -73,6 +77,10 @@
     display: flex;
     align-items: center;
     padding: 0px 16px;
+}
+
+.review__author_single {
+
 }
 
 .review-image {
