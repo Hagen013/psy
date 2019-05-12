@@ -164,3 +164,18 @@ STATICFILES_DIRS = (
 )
 # ------------------------------------------------------------------------------
 # STATIC FILES END
+
+# MAIL SETTINGS
+# ------------------------------------------------------------------------------
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+
+# SMTP SETTINGS
+# ------------------------------------------------------------------------------
+
+EMAILS_ADMIN = 'life.kyznetsova@yandex.ru'
+EMAIL_HOST_USER = 'life.kyznetsova@yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_HOST_PASSWORD = 'password.an.life'
+EMAIL_USE_SSL = True
