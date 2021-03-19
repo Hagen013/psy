@@ -33,7 +33,7 @@ django-mptt==0.8.7
 django-polymorphic==2.0.2
 django-redis==4.8.0
 django-rest-elasticsearch==0.3.2
-djangorestframework==3.6.3
+djangorestframework==3.11.2
 docker==2.7.0
 docker-compose==1.15.0
 docker-pycreds==0.3.0
